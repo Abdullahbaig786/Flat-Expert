@@ -22,6 +22,8 @@ const App = () => {
       <Vision />
       <Feedback />
       <Betrungs />
+      <ContactForm />
+      <Address />
     </div>
   );
 };
