@@ -3,12 +3,13 @@ import picture from "../assets/Address.png";
 
 const Address = () => {
   return (
-    <div className="bg-[#30D5C8] p-5 rounded-md flex mb-8"> {/* Added mb-8 for margin-bottom */}
+    <div className="bg-[#30D5C8] p-5 rounded-md flex mb-8">
+      {" "}
+      {/* Added mb-8 for margin-bottom */}
       {/* Image on the left */}
       <div className="w-1/3">
         <img src={picture} alt="Background" className="w-full" />
       </div>
-
       {/* Text on the right */}
       <div className="w-2/3 ml-4">
         <h2 className="text-white text-xl font-bold">KONTAKT</h2>
