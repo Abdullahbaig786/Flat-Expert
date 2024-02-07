@@ -1,20 +1,31 @@
-// Datenschutz.jsx
-
 import React from "react";
-import DatenschutzForm from "../assets/DatenForm.pdf"; // Import the PDF form
 
-const Datenschutz = () => {
+const Datenschutz = ({ showPdfModal, setShowPdfModal }) => {
   return (
-    <div className="modal">
-      <div className="modal-content">
-        <h2>Datenschutzerklärung</h2>
-        <p>Insert your Datenschutzerklärung content here...</p>
-        <iframe
-          src={DatenschutzForm}
-          width="100%"
-          height="500px"
-          title="Datenschutz Form"
-        ></iframe>
+    <div className={`modal ${showPdfModal ? "block" : "hidden"}`}>
+      <div
+        className="modal-overlay"
+        onClick={() => setShowPdfModal(false)}
+      ></div>
+      <div className="modal-container">
+        <div className="modal-content">
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <h2 className="text-xl font-bold mb-4">Datenschutzerklärung</h2>
+            <p>
+              This is your Datenschutzerklärung content. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit. Sed ut ex quis nulla tincidunt
+              cursus. Nulla facilisi. Proin faucibus nibh sed libero
+              scelerisque, sit amet aliquet nisi tincidunt. Donec euismod
+              vestibulum massa, id fermentum metus aliquam a. Nullam luctus
+              nulla id libero laoreet condimentum. Morbi pulvinar nibh nec
+              turpis dapibus, in varius eros bibendum. Suspendisse potenti. In
+              hac habitasse platea dictumst.
+            </p>
+          </div>
+        </div>
+        <button className="modal-close" onClick={() => setShowPdfModal(false)}>
+          Close
+        </button>
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Datenschuty from "./Datenschutz";
 
 const ContactForm = () => {
   const form = useRef();
@@ -25,11 +24,17 @@ const ContactForm = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          resetForm(); // Reset the form after successful submission
         },
         (error) => {
           console.log("FAILED...", error.text);
         }
       );
+  };
+
+  const resetForm = () => {
+    form.current.reset();
+    setAcceptedTerms(false);
   };
 
   return (
@@ -105,27 +110,29 @@ const ContactForm = () => {
               onChange={handleCheckboxChange}
               className="mr-2"
             />
-            <div className="flex items-center mb-4">
-              <label htmlFor="terms" className="text-sm">
-                ICH STIMME DER{" "}
-                <a
-                  href="/src/assets/DatenForm.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  DATENSCHUTZERKLÄRUNG
-                </a>{" "}
-                ZU
-              </label>
-            </div>
-
-            <button
-              type="submit"
-              className="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition-colors ml-2"
-            >
-              Absenden
-            </button>
+            <label htmlFor="terms" className="text-sm">
+              ICH STIMME DER{" "}
+              <a
+                href="/src/assets/DatenForm.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500"
+              >
+                DATENSCHUTZERKLÄRUNG
+              </a>{" "}
+              ZU
+            </label>
           </div>
+
+          <button
+            type="submit"
+            className={`bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition-colors ml-2 ${
+              !acceptedTerms ? "opacity-50 cursor-not-allowed" : ""
+            }`}
+            disabled={!acceptedTerms}
+          >
+            Absenden
+          </button>
         </form>
 
         {/* Contact Information */}
