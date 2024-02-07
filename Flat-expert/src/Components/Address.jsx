@@ -4,8 +4,6 @@ import picture from "../assets/Address.png";
 const Address = () => {
   return (
     <div className="bg-[#30D5C8] p-5 rounded-md flex mb-8">
-      {" "}
-      {/* Added mb-8 for margin-bottom */}
       {/* Image on the left */}
       <div className="w-1/3">
         <img src={picture} alt="Background" className="w-full" />
@@ -34,13 +32,13 @@ const Address = () => {
 
         <div className="mt-4">
           {/* Add your social media icons and links here */}
-          Get Social
+          <span className="text-white">Get Social</span>
           {/* Example */}
           {/* 
-                      <a href='your-instagram-link' target='_blank' rel='noopener noreferrer'>
-                          Instagram Icon here
-                      </a> 
-                  */}
+            <a href='your-instagram-link' target='_blank' rel='noopener noreferrer'>
+                Instagram Icon here
+            </a> 
+          */}
         </div>
       </div>
     </div>

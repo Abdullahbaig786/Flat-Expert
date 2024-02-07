@@ -13,17 +13,17 @@ const Footer = () => {
         <div className="flex justify-center">
           {/* Facebook */}
           <a href="#!" className="mr-7 text-neutral-600 dark:text-neutral-200">
-            <img src={facebook} alt="Background" className="h-5 w-5" />
+            <img src={facebook} alt="Facebook" className="h-5 w-5" />
           </a>
 
           {/* X */}
           <a href="#!" className="mr-7 text-neutral-600 dark:text-neutral-200">
-            <img src={X} alt="Background" className="h-5 w-5" />
+            <img src={X} alt="X" className="h-5 w-5" />
           </a>
 
           {/* Instagram */}
           <a href="#!" className="mr-7 text-neutral-600 dark:text-neutral-200">
-            <img src={insta} alt="Background" className="h-5 w-5" />
+            <img src={insta} alt="Instagram" className="h-5 w-5" />
           </a>
         </div>
       </div>
@@ -40,53 +40,47 @@ const Footer = () => {
               Kurfürstendamm 11
               <br />
               10719 Berlin
-              <br />
-              <br />
-              <br />
-              <h6 className="font-semibold mb-4">
-                Verantwortlich für den Inhalt:
-              </h6>
-              <p>FlatExpert FE GmbH</p>
-              <br />
-              <br />
-              <h6 className="font-semibold mb-4">Kontakt:</h6>
-              <p>
-                Tel.: 030 12113394 <br /> E-Mail: support@flat-expert.com <br />
-                Web: www.flat-expert.com
-              </p>
+            </p>
+            <br />
+            <span className="font-semibold mb-4">
+              Verantwortlich für den Inhalt:
+            </span>
+            <p>FlatExpert FE GmbH</p>
+            <br />
+            <span className="font-semibold mb-4">Kontakt:</span>
+            <p>
+              Tel.: 030 12113394 <br /> E-Mail: support@flat-expert.com <br />
+              Web: www.flat-expert.com
             </p>
           </div>
 
           {/* 2nd Column */}
           <div className="col-span-1">
-            <h6 className="font-semibold mb-4">
+            <span className="font-semibold mb-4">
               Vertretungsberechtigte Geschäftsführer:
-            </h6>
+            </span>
+            <p>Stefan Teschner</p>
+            <br />
+            <br />
+            <span className="font-semibold mb-4">Haftungshinweis:</span>
             <p>
-              Stefan Teschner
-              <br />
-              <br />
-              <br />
-              <h6 className="font-semibold mb-4">Haftungshinweis:</h6>
-              <p>
-                Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine
-                Haftung für die Inhalte externer Links. Für den Inhalt der
-                verlinkten Seiten sind ausschließlich deren Betreiber
-                verantwortlich.
-              </p>
-              <br />
-              <br />
-              <h6 className="font-semibold mb-4">Datenschutz:</h6>
-              <p>
-                Datenschutzerklärung gemäß DSGVO finden Sie hier (Link zur
-                Datenschutzerklärung einfügen)
-              </p>
+              Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine
+              Haftung für die Inhalte externer Links. Für den Inhalt der
+              verlinkten Seiten sind ausschließlich deren Betreiber
+              verantwortlich.
+            </p>
+            <br />
+            <br />
+            <span className="font-semibold mb-4">Datenschutz:</span>
+            <p>
+              Datenschutzerklärung gemäß DSGVO finden Sie hier (Link zur
+              Datenschutzerklärung einfügen)
             </p>
           </div>
 
           {/* 3rd Column */}
           <div className="col-span-1">
-            <h6 className="font-semibold mb-4">Handelsregister:</h6>
+            <span className="font-semibold mb-4">Handelsregister:</span>
             <p>
               Registergericht: Amtsgericht Berlin (Charlottenburg) <br />
               Registernummer: HRB 259438 B <br />{" "}
