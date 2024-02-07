@@ -5,10 +5,7 @@ import facebook from "../assets/FB.png";
 
 const Footer = () => {
   return (
-    <footer
-      id="impressum"
-      className="bg-white text-black dark:bg-neutral-600 dark:text-neutral-200 lg:text-left"
-    >
+    <footer id="impressum" className="bg-white text-black lg:text-left">
       <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
         <div className="mr-12 hidden lg:block">
           <span>Impressum</span>
@@ -32,7 +29,7 @@ const Footer = () => {
       </div>
 
       {/* 1st column */}
-      <div className="mx-6 py-10 text-center md:text-left">
+      <div className="bg-white text-black mx-6 py-10 text-center md:text-left">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="col-span-1">
             <h6 className="font-semibold mb-4">Anschrift:</h6>
@@ -101,7 +98,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-white text-black dark:bg-neutral-600 dark:text-neutral-200 p-4 text-sm">
+      <div className="bg-white text-black p-4 text-sm">
         <p>
           <span className="font-bold">
             Urheberrecht: <br />
