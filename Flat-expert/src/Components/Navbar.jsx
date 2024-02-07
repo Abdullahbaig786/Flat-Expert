@@ -88,7 +88,7 @@ const Navbar = () => {
                   offset={-70} // Adjust the offset as needed
                   duration={500} // Duration of the scroll animation
                   className="text-black hover:text-blue-500 px-3 py-2 text-sm font-medium"
-                >
+                > 
                   IMPRESSUM
                 </Link>
               </div>
