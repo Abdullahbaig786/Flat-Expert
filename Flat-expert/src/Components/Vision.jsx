@@ -3,7 +3,7 @@ import vision from "../assets/vision.png";
 
 function Vision() {
   return (
-    <div className="relative">
+    <div id="vision" className="relative">
       <img src={vision} alt="Background" />
     </div>
   );

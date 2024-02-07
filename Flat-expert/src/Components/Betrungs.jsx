@@ -3,7 +3,7 @@ import betrungs from "../assets/betrungs.png";
 
 function Betrungs() {
   return (
-    <div className="relative">
+    <div id = "betrungs" className="relative">
       <img src={betrungs} alt="Background" />
     </div>
   );

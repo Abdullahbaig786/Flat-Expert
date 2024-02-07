@@ -6,7 +6,7 @@ import card4 from "../assets/card4.png";
 
 function Cards() {
   return (
-    <div className="relative">
+    <div id="cards" className="relative">
       <img src={card1} alt="Background" />
       <img src={card2} alt="Background" />
       <img src={card3} alt="Background" />
