@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "YourCustomFont";
-  src: url("../assets/Classyvogueregular.ttf") format("truetype");
+  font-family: ultra;
+  src: url(../src/fonts/Classyvogueregular.ttf);
+}
+.ultra {
+  font-family: Classyvogueregular;
 }

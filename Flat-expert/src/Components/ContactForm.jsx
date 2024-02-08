@@ -126,7 +126,7 @@ const ContactForm = () => {
 
           <button
             type="submit"
-            className={`bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition-colors ml-2 ${
+            className={`bg-green-500 text-white py-2 px-6 rounded-md hover:bg-green-400 transition-colors ml-2 ${
               !acceptedTerms ? "opacity-50 cursor-not-allowed" : ""
             }`}
             disabled={!acceptedTerms}

@@ -12,13 +12,13 @@ const Home = () => {
         <img src={homeImage} alt="Apartment Building" className="w-full" />
 
         {/* Left Side Content */}
-        <div className="absolute top-1/2 transform -translate-y-1/2 left-5 md:left-10 text-white">
-          <div className="absolute top-2 left-2 md:top-5 md:left-36 text-white font-yourCustomFont">
-            <h1 className="text-lg md:text-xl font-bold">FLATEXPERT FE GMBH</h1>
+        <div className="absolute top-1/2 transform -translate-y-1/2 left-5 md:left-16 text-white">
+          <div className="transform -translate-y-7 left-5 md:left-10 ultra">
+            <h1 className="text-5xl md:text-7xl font-bold">
+              Leading in <br /> Flats, <br /> Leading in <br /> Experts.
+            </h1>
           </div>
-          <p className="text-sm md:text-lg">
-            Leading in Flats, Leading in Experts.
-          </p>
+          <p className="mt-4 text-sm md:text-lg"></p>
           <Link
             to="kontakt" // ID of the Kontakt form
             spy={true}
@@ -26,7 +26,8 @@ const Home = () => {
             offset={-70}
             duration={500}
           >
-            <button className="mt-2 md:mt-4 px-3 md:px-6 py-2 md:py-3 bg-blue-500 hover:bg-blue-600 rounded-md text-white text-xs md:text-sm">
+            <p>KONTAKTIEREN SIE UNS DIREKT</p>
+            <button className="mt-2 md:mt-4 px-3 md:px-6 py-2 md:py-3 bg-green-500 hover:bg-green-400 rounded-md text-white text-xs md:text-sm">
               KONTAKT
             </button>
           </Link>
