@@ -3,7 +3,7 @@ import picture from "../assets/Address.png";
 
 const Address = () => {
   return (
-    <section className="relative pt-12 bg-blueGray-50">
+    <section className="relative pt-12 bg-[#69C9C4]">
       <div className="items-center flex flex-wrap">
         <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
           <img alt="..." className="max-w-full " src={picture} />
@@ -49,8 +49,7 @@ const Address = () => {
             </div>
             <div className="hidden md:block">
               {" "}
-              {/* Hide on mobile screens */}
-              <h4 className="text-lg font-semibold">Get social</h4>
+              
             </div>
           </div>
         </div>

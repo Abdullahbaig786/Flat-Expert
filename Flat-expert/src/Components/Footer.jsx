@@ -3,6 +3,7 @@ import X from "../assets/X.png";
 import insta from "../assets/Insta.png";
 import facebook from "../assets/FB.png";
 import logo from "../assets/logo.png";
+import DatenFormPDF from "../assets/DatenForm.pdf";
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
     >
       <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
         <div className="mr-12 hidden lg:block">
-          <span>Impressum</span>
+          <h4 className="text-xl font-bold">Impressum</h4>
         </div>
         <div className="flex justify-center">
           {/* Facebook */}
@@ -84,8 +85,15 @@ const Footer = () => {
             <br />
             <span className="font-semibold mb-4">Datenschutz:</span>
             <p>
-              Datenschutzerklärung gemäß DSGVO finden Sie hier (Link zur
-              Datenschutzerklärung einfügen)
+              Datenschutzerklärung gemäß DSGVO finden Sie hier{" "}
+              <a
+                href={DatenFormPDF}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "blue" }}
+              >
+                (Link zur Datenschutzerklärung einfügen)
+              </a>
             </p>
           </div>
           {/* 3rd Column */}

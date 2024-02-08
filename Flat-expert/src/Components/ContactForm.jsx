@@ -38,7 +38,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-gray-100 p-8">
+    <div className="bg-[#69C9C4] p-8">
       <div className="flex flex-col md:flex-row">
         <form
           id="kontakt"
@@ -134,9 +134,8 @@ const ContactForm = () => {
             Absenden
           </button>
         </form>
-
         {/* Contact Information */}
-        <div className="mt-8 md:mt-0 md:ml-4 md:w-64">
+        <div className="mt-8 md:mt-28 md:ml-4 md:w-64">
           {" "}
           <div className="mb-5">
             <strong>TELEFON</strong>
@@ -163,6 +162,7 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
+      <hr className="border-black my-8" />
     </div>
   );
 };
