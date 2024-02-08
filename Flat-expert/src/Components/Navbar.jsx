@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
-  return (
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // Adjust the breakpoint as needed
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initial check
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return !isMobile ? (
     <nav className="bg-[#69C9C4] sticky top-0 z-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-center">
@@ -89,15 +102,16 @@ const Navbar = () => {
                   duration={500}
                   className="text-black hover:text-blue-500 px-3 py-2 text-xl font-bold"
                 >
-                  IMPRESSUM
+                  ÜBER UNS
                 </Link>
+                {/* Add more Link components for other sections */}
               </div>
             </div>
           </div>
         </div>
       </div>
     </nav>
-  );
+  ) : null; // Render nothing if isMobile is true
 };
 
 export default Navbar;
