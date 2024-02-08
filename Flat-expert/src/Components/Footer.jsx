@@ -2,10 +2,14 @@ import React from "react";
 import X from "../assets/X.png";
 import insta from "../assets/Insta.png";
 import facebook from "../assets/FB.png";
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer id="impressum" className="bg-white text-black lg:text-left">
+    <footer
+      id="impressum"
+      className="bg-white text-black lg:text-left relative"
+    >
       <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
         <div className="mr-12 hidden lg:block">
           <span>Impressum</span>
@@ -27,6 +31,13 @@ const Footer = () => {
           </a>
         </div>
       </div>
+
+      {/* Logo */}
+      <img
+        src={logo}
+        alt="FlatExpert Logo"
+        className="absolute top-2 left-1/2 transform -translate-x-1/2 -translate-y-full md:top-20 md:-translate-y-0 md:left-auto md:right-0 w-20 md:w-40"
+      />
 
       {/* 1st column */}
       <div className="bg-white text-black mx-6 py-10 text-center md:text-left">
@@ -77,9 +88,10 @@ const Footer = () => {
               Datenschutzerklärung einfügen)
             </p>
           </div>
-
           {/* 3rd Column */}
-          <div className="col-span-1">
+          <div className="col-span-1 mt-24">
+            {" "}
+            {/* Increased margin top here */}
             <span className="font-semibold mb-4">Handelsregister:</span>
             <p>
               Registergericht: Amtsgericht Berlin (Charlottenburg) <br />

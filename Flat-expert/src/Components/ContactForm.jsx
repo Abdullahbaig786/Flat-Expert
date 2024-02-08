@@ -77,7 +77,7 @@ const ContactForm = () => {
               required
             />
           </div>
-          <div className="flex flex-col mb-4 w-64">
+          <div className="flex flex-col mb-4 w-1/2">
             <label htmlFor="user_telephone" className="mb-2">
               Telephone
             </label>

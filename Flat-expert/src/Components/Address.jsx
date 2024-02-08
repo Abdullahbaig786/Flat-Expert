@@ -3,45 +3,59 @@ import picture from "../assets/Address.png";
 
 const Address = () => {
   return (
-    <div className="bg-[#30D5C8] p-5 rounded-md flex mb-8">
-      {/* Image on the left */}
-      <div className="w-1/3">
-        <img src={picture} alt="Background" className="w-full" />
-      </div>
-      {/* Text on the right */}
-      <div className="w-2/3 ml-4">
-        <h2 className="text-white text-xl font-bold">KONTAKT</h2>
-        <p className="text-white mt-2">FlatExpert FE GmbH</p>
-        <p className="text-white">c/o WeWork Germany GmbH</p>
-        <p className="text-white">Kurfürstendamm 11, 10719 Berlin</p>
-        <a
-          href="tel:03012113394"
-          className="text-blue-400 underline mt-2 block"
-        >
-          030 12113394
-        </a>
-        <a
-          href="mailto:support@flat-expert.com"
-          className="text-blue-400 underline mt-1 block"
-        >
-          support@flat-expert.com
-        </a>
+    <section className="relative pt-12 bg-blueGray-50">
+      <div className="items-center flex flex-wrap">
+        <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
+          <img alt="..." className="max-w-full " src={picture} />
+        </div>
+        <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
+          <div className="md:pr-12 pb-4">
+            <h3 className="text-3xl font-semibold">KONTAKT</h3>
+            <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
+              FlatExpert FE GmbH <br /> c/o WeWork Germany GmbH <br />{" "}
+              Kurfürstendamm 11 <br /> 10719 Berlin <br /> <br />
+            </p>
+            <p>
+              <a
+                href="tel:03012113394"
+                className="text-blue-600 hover:underline"
+              >
+                030 12113394
+              </a>{" "}
+              <br />
+              <a
+                href="mailto:support@flat-expert.com"
+                className="text-blue-600 hover:underline"
+              >
+                support@flat-expert.com
+              </a>
+            </p>
+          </div>
 
-        <h3 className="text-white text-lg font-bold mt-4">UNSERE BÜROZEITEN</h3>
-        <p className="text-white mt-2">Montag bis Freitag: 09:00 - 18:00 Uhr</p>
-
-        <div className="mt-4">
-          {/* Add your social media icons and links here */}
-          <span className="text-white">Get Social</span>
-          {/* Example */}
-          {/* 
-            <a href='your-instagram-link' target='_blank' rel='noopener noreferrer'>
-                Instagram Icon here
-            </a> 
-          */}
+          <div className="md:pr-8">
+            <h4 className="text-2x1 font-semibold">UNSERE BÜROZEITEN</h4>
+            <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
+              Montag bis Freitag <br /> 09:00 - 18:00 Uhr <br /> <br />{" "}
+              BERATUNGEN NUR NACH <br /> TERMINABSPRACHE
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+      <footer className="relative pt-8 pb-3 mt-8">
+        <div className="container mx-auto px-10">
+          <div className="flex flex-wrap items-center justify-center md:justify-between">
+            <div className="md:pr-8">
+              {/* Empty div to push the heading to the right */}
+            </div>
+            <div className="hidden md:block">
+              {" "}
+              {/* Hide on mobile screens */}
+              <h4 className="text-lg font-semibold">Get social</h4>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
   );
 };
 
