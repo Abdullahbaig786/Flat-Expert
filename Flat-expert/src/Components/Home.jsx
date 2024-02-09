@@ -33,7 +33,7 @@ const Home = () => {
           <div
             className={`transform ${
               isMobile ? "-translate-y-0 md:-translate-y-10" : ""
-            } left-5 md:left-10 ultra ${isMobile ? "text-3xl" : "text-5xl"}`}
+            } left-5 md:left-10 ultra ${isMobile ? "text-2xl" : "text-7xl"}`}
           >
             <h1 className="font-bold leading-tight md:leading-tight">
               Leading in <br /> Flats, <br /> Leading in <br /> Experts.
@@ -54,14 +54,19 @@ const Home = () => {
         </div>
 
         {/* FLATEXPERT FE GMBH text in top left corner */}
-        <div className="hidden md:block absolute top-2 left-2 md:top-5 md:left-36 text-white">
+        <div className="hidden md:block absolute top-2 left-2 md:top-5 md:left-20 text-white">
           <h1 className="text-lg md:text-xl font-bold">FLATEXPERT FE GMBH</h1>
         </div>
       </div>
 
       {/* Right Side Logo */}
+
       <div className="absolute top-2 right-2 md:top-5 md:right-5">
-        <img src={logo} alt="FlatExpert Logo" className="w-24 md:w-32" />
+        {isMobile ? (
+          <img src={logo} alt="FlatExpert Logo" className="w-24 md:w-32" />
+        ) : (
+          <img src={logo} alt="FlatExpert Logo" className="w-64 md:w-80" />
+        )}
       </div>
     </div>
   );

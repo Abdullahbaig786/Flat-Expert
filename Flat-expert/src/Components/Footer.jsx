@@ -17,17 +17,32 @@ const Footer = () => {
         </div>
         <div className="flex justify-center">
           {/* Facebook */}
-          <a href="#!" className="mr-7 text-neutral-600 dark:text-neutral-200">
+          <a
+            href="https://www.facebook.com/profile.php?id=61556183733918"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mr-7 text-neutral-600 dark:text-neutral-200"
+          >
             <img src={facebook} alt="Facebook" className="h-5 w-5" />
           </a>
 
           {/* X */}
-          <a href="#!" className="mr-7 text-neutral-600 dark:text-neutral-200">
+          <a
+            href="https://twitter.com/flatxpert"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mr-7 text-neutral-600 dark:text-neutral-200"
+          >
             <img src={X} alt="X" className="h-5 w-5" />
           </a>
 
           {/* Instagram */}
-          <a href="#!" className="mr-7 text-neutral-600 dark:text-neutral-200">
+          <a
+            href="https://www.instagram.com/flatxpert?igsh=MTFoa2Qxc2FwZHYwdA=="
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mr-7 text-neutral-600 dark:text-neutral-200"
+          >
             <img src={insta} alt="Instagram" className="h-5 w-5" />
           </a>
         </div>

@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import DatenFormPDF from "../assets/DatenForm.pdf";
 
 const ContactForm = () => {
   const form = useRef();
@@ -38,7 +39,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-[#69C9C4] p-8">
+    <div className="bg-[#30d5c8] p-8">
       <div className="flex flex-col md:flex-row">
         <form
           id="kontakt"
@@ -113,10 +114,10 @@ const ContactForm = () => {
             <label htmlFor="terms" className="text-sm">
               ICH STIMME DER{" "}
               <a
-                href="/src/assets/DatenForm.pdf"
+                href={DatenFormPDF}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500"
+                style={{ color: "blue" }}
               >
                 DATENSCHUTZERKLÄRUNG
               </a>{" "}

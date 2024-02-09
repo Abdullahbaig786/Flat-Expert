@@ -3,7 +3,7 @@ import picture from "../assets/Address.png";
 
 const Address = () => {
   return (
-    <section className="relative pt-12 bg-[#69C9C4]">
+    <section className="relative pt-12 bg-[#30d5c8]">
       <div className="items-center flex flex-wrap">
         <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
           <img alt="..." className="max-w-full " src={picture} />
@@ -47,10 +47,7 @@ const Address = () => {
             <div className="md:pr-8">
               {/* Empty div to push the heading to the right */}
             </div>
-            <div className="hidden md:block">
-              {" "}
-              
-            </div>
+            <div className="hidden md:block"> </div>
           </div>
         </div>
       </footer>
