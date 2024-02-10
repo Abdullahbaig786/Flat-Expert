@@ -14,7 +14,7 @@ import Warum from "./Components/Warum";
 const App = () => {
   return (
     <div>
-      <Navbar />
+      
       <Home />
       <About />
       <Warum />
