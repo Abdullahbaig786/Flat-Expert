@@ -19,13 +19,13 @@ const ContactForm = () => {
     }
 
     emailjs
-      .sendForm("service_72olbbn", "template_2ef70fu", form.current, {
-        publicKey: "aG74etRnisnRdPD8r",
+      .sendForm("service_b7t0088", "template_p24k58b", form.current, {
+        publicKey: "S1IRfjRNAIuUZKrGb",
       })
       .then(
         () => {
           console.log("SUCCESS!");
-          resetForm(); // Reset the form after successful submission
+          resetForm();
         },
         (error) => {
           console.log("FAILED...", error.text);
