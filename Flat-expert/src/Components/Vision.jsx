@@ -1,16 +1,16 @@
 import React from "react";
-import img2 from "../assets/vision.png"; // Import your image here
+import img2 from "../assets/vision.png";
 
 const Vision = () => {
   return (
     <div className="mt-40">
-      <div className="flex">
+      <div className="flex bg-[#30d5c8]">
         {/* Left side */}
-        <div className="w-1/2 p-4 bg-[#30d5c8]">
+        <div className="w-full md:w-1/2 p-4 bg-[#30d5c8] md:ml-20 md:mr-0">
           <h1 className="text-5xl font-bold mb-4 mt-20 ultra text-white">
             UNSERE <br /> VISION
           </h1>
-          <div className="border-b-2 border-gray-300 mb-4"></div>
+          <div className="border-b-2 border-gray-300 mb-4 mr-10"></div>
           <p className="text-lg text-white">
             {" "}
             {/* Adjusted text-lg class */}
@@ -29,13 +29,8 @@ const Vision = () => {
           </p>
         </div>
         {/* Right side */}
-
-        <div>
-          <img
-            className="h-auto max-w-lg ms-auto"
-            src={img2}
-            alt="image description"
-          />
+        <div className="w-full md:w-1/2 flex justify-end md:mr-5 md:ml-0">
+          <img className="h-auto max-w-lg" src={img2} alt="image description" />
         </div>
       </div>
     </div>

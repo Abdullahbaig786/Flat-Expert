@@ -3,8 +3,10 @@ import feedback from "../assets/feedback.png";
 
 function Feedback() {
   return (
-    <div id = "feedback" className="relative">
-      <img src={feedback} alt="Background" />
+    <div className="mt-28">
+      <div id="feedback" className="relative">
+        <img src={feedback} alt="Background" />
+      </div>
     </div>
   );
 }

@@ -14,10 +14,12 @@ import img12 from "../assets/12.png";
 
 const Cards = () => {
   return (
-    <div className="mt-40">
-      <h1 className="text-5xl font-bold mb-8 ml-10 lg:ml-32 ultra">
-        Unsere Leistung
+    <div className="mt-20">
+      <h1 className="text-5xl font-bold mb-8 ml-5 lg:ml-32 ultra">
+        UNSERE <br />
+        LEISTUNG
       </h1>
+      <div className="border-b-2 border-gray-300 mb-4 ml-7 mr-10"></div>
       <div className="flex flex-wrap justify-center">
         <div className="max-w-md mx-2 my-20 bg-[#30d5c8] overflow-hidden shadow-md">
           <img

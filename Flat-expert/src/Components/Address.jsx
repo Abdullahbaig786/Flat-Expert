@@ -10,7 +10,7 @@ const Address = () => {
         </div>
         <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
           <div className="md:pr-12 pb-4">
-            <h3 className="text-3xl font-semibold">KONTAKT</h3>
+            <h3 className="text-3xl font-semibold ultra">KONTAKT</h3>
             <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
               FlatExpert FE GmbH <br /> c/o WeWork Germany GmbH <br />{" "}
               Kurfürstendamm 11 <br /> 10719 Berlin <br /> <br />
