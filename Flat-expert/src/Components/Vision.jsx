@@ -3,7 +3,7 @@ import img2 from "../assets/vision.png";
 
 const Vision = () => {
   return (
-    <div className="mt-40">
+    <div className="mt-40" id="vision">
       <div className="flex bg-[#30d5c8]">
         {/* Left side */}
         <div className="w-full md:w-1/2 p-4 bg-[#30d5c8] md:ml-20 md:mr-0">
@@ -15,7 +15,7 @@ const Vision = () => {
             {" "}
             {/* Adjusted text-lg class */}
             Wir streben danach, einen signifikanten Beitrag zur Lösung des
-            Wohnungsproblems in Großstädten zu leisten. Unsere Vision ist es,
+            Wohnungsproblem in Großstädten zu leisten. Unsere Vision ist es,
             durch innovative Ansätze und maßgeschneiderte Beratung die
             Herausforderungen der Wohnungssuche zu bewältigen. Wir setzen uns
             dafür ein, dass jeder Mensch Zugang zu angemessenem und bezahlbarem

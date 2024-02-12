@@ -3,7 +3,7 @@ import img3 from "../assets/betrungs.png";
 
 const Betrungs = () => {
   return (
-    <div className="mt-40">
+    <div className="mt-40" id="betrungs">
       <div className="flex bg-white">
         {/* Left side */}
         <div className="w-full md:w-1/2 p-4 bg-white md:ml-10 md:mr-8">
@@ -11,7 +11,7 @@ const Betrungs = () => {
             BETRUNGSPRÄVENTION
           </h1>
           <div className="border-b-2 border-gray-300 mb-4 mr-10 "></div>
-          <p className="text-lg text-black">
+          <p className="text-lg text-black text-justify">
             Liebe Wohnungssuchende, bei FlatExpert FE GmbH setzen wir einen
             klaren Fokus: Wir glauben an ehrliche und korrekte Wege, um Ihnen zu
             Ihrer Traumwohnung zu verhelfen. Schluss mit unnötigen
@@ -24,7 +24,7 @@ const Betrungs = () => {
             überzeugt, dass jeder das Recht auf eine ehrliche und qualitativ
             hochwertige Unterstützung bei der Wohnungssuche hat.
           </p>
-          <p className="text-lg text-black">
+          <p className="text-lg text-black text-justify">
             <br />
             <strong>Warum FlatExpert FE GmbH?</strong>
             <br />
@@ -48,8 +48,8 @@ const Betrungs = () => {
           </p>
         </div>
         {/* Right side */}
-        <div className="w-full md:w-1/2 p-10 bg-white md:ml-20 md:mr-0 mb-8 md:mb-0 mt-4 md:mt-0">
-          <img src={img3} alt="Placeholder" className="w-full max-h-[85vh]" />
+        <div className="max-w-[700px] md:w-1/2 p-10 bg-white md:ml-20 md:mr-0 mb-8 md:mb-0 mt-4 md:mt-0">
+          <img src={img3} alt="Placeholder" className="w-full max-h-[75vh]" />
         </div>
       </div>
     </div>

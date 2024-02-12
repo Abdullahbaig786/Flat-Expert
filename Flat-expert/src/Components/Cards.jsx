@@ -14,7 +14,7 @@ import img12 from "../assets/12.png";
 
 const Cards = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-20" id="cards">
       <h1 className="text-5xl font-bold mb-8 ml-5 lg:ml-32 ultra">
         UNSERE <br />
         LEISTUNG

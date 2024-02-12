@@ -47,7 +47,7 @@ const Home = () => {
             offset={-70}
             duration={500}
           >
-            <button className="mt-2 md:mt-4 px-3 md:px-6 py-2 md:py-3 bg-green-500 hover:bg-green-00 rounded-md text-white text-xs md:text-sm">
+            <button className="mt-2 md:mt-4 px-3 md:px-6 py-2 md:py-3 bg-green-500 hover:bg-green-400 rounded-md text-white text-xs md:text-sm">
               KONTAKT
             </button>
           </Link>

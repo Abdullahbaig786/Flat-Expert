@@ -13,7 +13,7 @@ const Footer = () => {
     >
       <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
         <div className="mr-12 hidden lg:block">
-          <h4 className="text-4xl font-bold mb-3 mt-2 ultra">Impressum</h4>
+          <h4 className="text-5xl font-bold mb-3 mt-2 ultra">IMPRESSUM</h4>
         </div>
         <div className="flex justify-center">
           {/* Facebook */}
@@ -52,7 +52,7 @@ const Footer = () => {
       <img
         src={logo}
         alt="FlatExpert Logo"
-        className="absolute top-2 left-1/2 transform -translate-x-1/2 -translate-y-full md:top-20 md:-translate-y-0 md:left-auto md:right-0 w-20 md:w-40"
+        className="absolute top-2 left-1/2 transform -translate-x-1/2 -translate-y-full md:top-16 md:-translate-y-0 md:left-auto md:right-0 w-20 md:w-40 mt-5 md:mt-10"
       />
 
       {/* 1st column */}
@@ -112,7 +112,7 @@ const Footer = () => {
             </p>
           </div>
           {/* 3rd Column */}
-          <div className="col-span-1 mt-24">
+          <div className="col-span-1 mt-40">
             {" "}
             {/* Increased margin top here */}
             <span className="font-semibold mb-4">Handelsregister:</span>
