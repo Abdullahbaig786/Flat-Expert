@@ -115,7 +115,7 @@ const Cards = () => {
           />
           <div className="px-6 py-4">
             <div className="font-bold text-xl text-white mb-2">
-              BEGLEITUNG BEI BEISCHTIGUNGEN
+              BEGLEITUNG BEI BESICHTIGUNGEN
             </div>
             <p className="text-white text-base">
               Aktive Unterstützung bei der Wohnungssuche und Begleitung bei
