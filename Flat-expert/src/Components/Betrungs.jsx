@@ -48,8 +48,12 @@ const Betrungs = () => {
           </p>
         </div>
         {/* Right side */}
-        <div className="max-w-[700px] md:w-1/2 p-10 bg-white md:ml-20 md:mr-0 mb-8 md:mb-0 mt-4 md:mt-0">
-          <img src={img3} alt="Placeholder" className="w-full max-h-[75vh]" />
+        <div className="max-w-[700px] p-10 bg-white md:ml-10 md:mr-0 mb-8 md:mb-0 mt-4 md:mt-0">
+          <img
+            src={img3}
+            alt="Placeholder"
+            className="w-full max-h-[85vh] mt-20"
+          />
         </div>
       </div>
     </div>
